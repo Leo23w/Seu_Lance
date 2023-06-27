@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx.MainController">
+   <children>
+      <Label prefHeight="400.0" prefWidth="184.0" style="-fx-background-color: #514e4e;" text="Texto de ejemplo" textFill="#514e4ed4" />
+      <Button layoutX="226.0" layoutY="185.0" mnemonicParsing="false" rotate="180.0" style="-fx-background-color: #6f0606;" text="➜" textFill="WHITE" />
+      <Button layoutX="525.0" layoutY="185.0" mnemonicParsing="false" style="-fx-background-color: #6f0606;" text="➜" textFill="WHITE" />
+      <Button layoutX="408.0" layoutY="352.0" mnemonicParsing="false" style="-fx-background-color: #6f0606;" text="➜" textFill="WHITE" />
+      <Button layoutX="300.0" layoutY="352.0" mnemonicParsing="false" style="-fx-background-color: #6f0606;" text="Fazer lances" textFill="WHITE" />
+      <Label layoutX="241.0" layoutY="14.0" text="Leiloẽs disponivel">
+         <font>
+            <Font name="Script MT Bold" size="41.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <ImageView fitHeight="184.0" fitWidth="226.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../Downloads/17295705-icone-de-martelo-de-leilao-em-estilo-simples-tribunal-sinal-ilustracaoial-no-fundo-branco-isolado-conceito-de-negocio-padrao-sem-emenda-do-tribunal-vetor-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="184.0" fitWidth="184.0" layoutY="216.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../Downloads/17295705-icone-de-martelo-de-leilao-em-estilo-simples-tribunal-sinal-ilustracaoial-no-fundo-branco-isolado-conceito-de-negocio-padrao-sem-emenda-do-tribunal-vetor-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="327.0" layoutY="275.0" prefHeight="13.0" prefWidth="126.0" text="Nome: Tracker Turbo" />
+      <Label layoutX="318.0" layoutY="293.0" text="Ano de Fabricação:2022" />
+      <Label layoutX="311.0" layoutY="311.0" text="Valor FIPE:R$ 126.628,00 BRL" />
+      <Button layoutX="29.0" layoutY="95.0" mnemonicParsing="false" onAction="#perfil" prefHeight="30.0" prefWidth="107.0" style="-fx-background-color: #6f0606;" text="Perfil" textFill="WHITE" />
+      <Button layoutX="29.0" layoutY="140.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="107.0" style="-fx-background-color: #6f0606;" text="Cadastrar leilão" textFill="WHITE" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="301.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@cruzerLeilão2.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="29.0" layoutY="185.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="107.0" style="-fx-background-color: #6f0606;" text="Chat" textFill="WHITE" />
+   </children>
+</AnchorPane>

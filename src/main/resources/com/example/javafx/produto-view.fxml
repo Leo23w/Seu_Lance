@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx.PerfilController">
+   <children>
+      <TableView fx:id="tabelaProduto" prefHeight="402.0" prefWidth="510.0">
+        <columns>
+          <TableColumn fx:id="colunaCodigo" prefWidth="173.0" text="Id" />
+          <TableColumn fx:id="colunaNome" prefWidth="179.0" text="Nome" />
+            <TableColumn fx:id="colunaPreco" prefWidth="157.0" text="Preço" />
+        </columns>
+      </TableView>
+      <Button layoutX="516.0" mnemonicParsing="false" onAction="#novo" onDragDetected="novo" prefHeight="59.0" prefWidth="88.0" text="novo" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0" />
+      <Button layoutX="502.0" layoutY="91.0" mnemonicParsing="false" onAction="#editar" onDragDetected="#novo" prefHeight="59.0" prefWidth="88.0" text="Editar" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="92.0" />
+      <Button layoutX="498.0" layoutY="185.0" mnemonicParsing="false" onAction="#excluir" onDragDetected="#novo" prefHeight="59.0" prefWidth="88.0" text="Excluir" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="170.0" />
+   </children>
+</AnchorPane>

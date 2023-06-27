@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" layoutY="-5.0" prefHeight="399.0" prefWidth="600.0" spacing="20.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx.LoginController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Label prefHeight="66.0" prefWidth="317.0" text="Bem-vindo" textAlignment="CENTER">
+      <font>
+         <Font name="Gill Sans Ultra Bold" size="45.0" />
+      </font>
+      <textFill>
+         <LinearGradient endX="1.0" endY="1.0" startX="0.7914691943127962">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color red="1.0" />
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color red="1.0" green="1.0" blue="1.0" />
+                  </color>
+               </Stop>
+            </stops>
+         </LinearGradient>
+      </textFill>
+      <effect>
+         <Shadow blurType="ONE_PASS_BOX" radius="4.75" width="0.0" />
+      </effect></Label>
+   <Label text="Login">
+      <font>
+         <Font name="Bookman Old Style" size="27.0" />
+      </font>
+      <textFill>
+         <LinearGradient endX="1.0" endY="1.0" startX="0.7772511848341231">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color />
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color red="1.0" green="1.0" blue="1.0" />
+                  </color>
+               </Stop>
+            </stops>
+         </LinearGradient>
+      </textFill>
+      <cursor>
+         <Cursor fx:constant="DEFAULT" />
+      </cursor>
+      <effect>
+         <Glow />
+      </effect>
+   </Label>
+   <TextField fx:id="usuarioField" promptText="Usuario" style="-fx-background-color: #c6bbbb;" />
+   <PasswordField fx:id="senhaField" promptText="Senha" style="-fx-background-color: #c6bbbb;" />
+   <Label fx:id="labelEntrar" />
+   <Button mnemonicParsing="false" onAction="#entrar" prefHeight="32.0" prefWidth="164.0" style="-fx-background-color: #6f0606;" text="Entrar" textFill="WHITE" />
+</VBox>

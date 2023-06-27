@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx.ProdutoModalController">
+
+    <children>
+        <Button layoutX="459.0" layoutY="356.0" mnemonicParsing="false" onAction="#salvar" onDragDetected="#salvar" text="salvar" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0" />
+        <Label layoutX="42.0" layoutY="14.0" text="codigo" AnchorPane.leftAnchor="36.0" />
+        <Label layoutX="36.0" layoutY="61.0" text="produto" AnchorPane.leftAnchor="36.0" />
+        <Label layoutX="42.0" layoutY="105.0" text="preco" AnchorPane.leftAnchor="36.0" />
+        <TextField fx:id="produtoField" layoutX="95.0" layoutY="57.0" prefHeight="26.0" prefWidth="499.0" AnchorPane.leftAnchor="95.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="10.0" />
+        <TextField fx:id="precoField" layoutX="95.0" layoutY="101.0" prefHeight="26.0" prefWidth="499.0" AnchorPane.leftAnchor="95.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="101.0" />
+        <Button layoutX="459.0" layoutY="356.0" mnemonicParsing="false" onAction="#cancelar" text="cancelar" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="76.0" />
+        <TextField fx:id="codigoField" layoutX="95.0" layoutY="57.0" prefHeight="26.0" prefWidth="499.0" AnchorPane.leftAnchor="95.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="57.0" />
+    </children>
+
+</AnchorPane>
