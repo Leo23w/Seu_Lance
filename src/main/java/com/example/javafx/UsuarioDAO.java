@@ -22,5 +22,10 @@ public class UsuarioDAO {
             return false;
         }
     }
+    public void editarUsuario(){
+String sql = "update usuario set nome = ?, idUsuario = ?;";
+        
+
+        
 
 }
