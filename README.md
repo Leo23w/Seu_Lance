@@ -1,2 +1,2 @@
 # Seu_Lance
-Um código para uma plataforma de leilão desktop
+Este é o nosso projeto para o semestral do segundo semestre de curso de TI
