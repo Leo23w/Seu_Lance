@@ -9,7 +9,7 @@ public class UsuarioDAO {
                 "root", //
                 "");
         String sql = ("select count(*) from usuario " //
-                + "where usuario = '" + usuario.usuario + " ' " //
+                + "where usuario = '" + usuario.usuario + "' " //
                 + "AND senha = '" + usuario.senha + "'");
 
 
@@ -22,5 +22,10 @@ public class UsuarioDAO {
             return false;
         }
     }
+    public void editarUsuario(){
+String sql = "update usuario set nome = ?, idUsuario = ?;";
+        
+
+        
 
 }
