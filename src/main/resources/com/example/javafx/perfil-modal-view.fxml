@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="296.0" prefWidth="600.0" style="-fx-background-color: #c3c0c0;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PerfilModalController">
+   <children>
+      <TextField fx:id="codigoField" disable="true" layoutX="95.0" layoutY="30.0" prefHeight="37.0" prefWidth="172.0" promptText="codigo" style="-fx-background-color: fff8f8;" AnchorPane.leftAnchor="95.0" AnchorPane.topAnchor="30.0" />
+      <TextField fx:id="localizacaoField" layoutX="370.0" layoutY="30.0" prefHeight="37.0" prefWidth="172.0" promptText="localizacão" style="-fx-background-color: fff8f8;" AnchorPane.leftAnchor="370.0" AnchorPane.topAnchor="30.0" />
+      <TextField fx:id="contaBancariaField" layoutX="95.0" layoutY="98.0" prefHeight="37.0" prefWidth="172.0" promptText="conta bancaria" style="-fx-background-color: fff8f8;" AnchorPane.leftAnchor="95.0" AnchorPane.topAnchor="98.0" />
+      <TextField fx:id="usuarioField" layoutX="370.0" layoutY="98.0" prefHeight="37.0" prefWidth="172.0" promptText="usuario" style="-fx-background-color: fff8f8;" AnchorPane.leftAnchor="370.0" AnchorPane.topAnchor="98.0" />
+      <TextField fx:id="senhaField" layoutX="95.0" layoutY="163.0" prefHeight="37.0" prefWidth="172.0" promptText="senha" style="-fx-background-color: fff8f8;" AnchorPane.leftAnchor="95.0" AnchorPane.topAnchor="163.0" />
+      <TextField fx:id="contatoField" layoutX="370.0" layoutY="163.0" prefHeight="37.0" prefWidth="172.0" promptText="contato" style="-fx-background-color: fff8f8;" AnchorPane.leftAnchor="370.0" AnchorPane.topAnchor="163.0" />
+      <Button layoutX="99.0" layoutY="221.0" mnemonicParsing="false" onAction="#salvar" onDragDetected="#salvar" prefHeight="17.0" prefWidth="80.0" style="-fx-background-color: #6f0606;" text="Salvar" textFill="WHITE" AnchorPane.leftAnchor="99.0" AnchorPane.topAnchor="221.0" />
+      <Button layoutX="185.0" layoutY="221.0" mnemonicParsing="false" onAction="#cancelar" onDragDetected="#cancelar" prefHeight="17.0" prefWidth="80.0" style="-fx-background-color: #6f0606;" text="Cancelar" textFill="WHITE" AnchorPane.leftAnchor="185.0" AnchorPane.topAnchor="221.0" />
+      <Label layoutX="374.0" layoutY="14.0" text="Localização" />
+      <Label layoutX="374.0" layoutY="81.0" text="Usuario" />
+      <Label layoutX="374.0" layoutY="146.0" text="Contato" />
+      <Label layoutX="95.0" layoutY="146.0" text="Senha" />
+      <Label layoutX="95.0" layoutY="81.0" text="Conta Bancaria" />
+      <Label layoutX="95.0" layoutY="14.0" text="Codigo" />
+      <Label layoutX="435.0" layoutY="14.0" prefHeight="17.0" prefWidth="8.0" text="*" textFill="#f80000" />
+      <Label layoutX="417.0" layoutY="81.0" prefHeight="17.0" prefWidth="8.0" text="*" textFill="#f80000" />
+      <Label layoutX="417.0" layoutY="146.0" prefHeight="17.0" prefWidth="8.0" text="*" textFill="#f80000" />
+      <Label layoutX="177.0" layoutY="81.0" prefHeight="17.0" prefWidth="8.0" text="*" textFill="#f80000" />
+      <Label layoutX="131.0" layoutY="146.0" prefHeight="17.0" prefWidth="8.0" text="*" textFill="#f80000" />
+   </children>
+</AnchorPane>

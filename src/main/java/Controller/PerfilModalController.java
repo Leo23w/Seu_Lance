@@ -1,6 +1,7 @@
-package com.example.javafx;
+package Controller;
 
 import Modal.Usuario;
+import com.example.javafx.HelloApplication;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
@@ -29,6 +30,7 @@ public class PerfilModalController implements Initializable {
     @FXML
     public void salvar() {
         Usuario novoUsuario = new Usuario();
+        usuario = novoUsuario;
 
         if (!codigoField.getText().isBlank()) {
             novoUsuario.codigo = Integer.parseInt(codigoField.getText());
@@ -49,7 +51,6 @@ public class PerfilModalController implements Initializable {
         novoUsuario.senha = senhaField.getText();
         novoUsuario.contato = contatoField.getText();
 
-        usuario = novoUsuario;
 
         if (localizacaoField.getText().isBlank()){
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
@@ -86,8 +87,7 @@ public class PerfilModalController implements Initializable {
         }
     }@FXML
     public void cancelar(){
-        HelloApplication.closeCurrentWindow();
-
+     HelloApplication.closeCurrentWindow();
     }
 
     @Override

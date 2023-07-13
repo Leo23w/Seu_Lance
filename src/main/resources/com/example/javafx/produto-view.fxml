@@ -5,17 +5,20 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx.PerfilController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #c3c0c0;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ProdutoController">
    <children>
-      <TableView fx:id="tabelaProduto" prefHeight="402.0" prefWidth="510.0">
+      <TableView fx:id="tabelaProduto" prefHeight="402.0" prefWidth="510.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="90.0" AnchorPane.topAnchor="0.0">
         <columns>
-          <TableColumn fx:id="colunaCodigo" prefWidth="173.0" text="Id" />
-          <TableColumn fx:id="colunaNome" prefWidth="179.0" text="Nome" />
-            <TableColumn fx:id="colunaPreco" prefWidth="157.0" text="Preço" />
+          <TableColumn fx:id="colunaCodigo" minWidth="0.0" prefWidth="0.0" text="Id" />
+          <TableColumn fx:id="colunaNome" prefWidth="147.0" text="Nome" />
+            <TableColumn fx:id="colunaValor" prefWidth="113.0" text="Valor" />
+            <TableColumn fx:id="colunaQuantidade" prefWidth="118.0" text="Quantidade" />
+            <TableColumn fx:id="colunaDescricao" prefWidth="131.0" text="Descrição" />
         </columns>
       </TableView>
-      <Button layoutX="516.0" mnemonicParsing="false" onAction="#novo" onDragDetected="novo" prefHeight="59.0" prefWidth="88.0" text="novo" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0" />
-      <Button layoutX="502.0" layoutY="91.0" mnemonicParsing="false" onAction="#editar" onDragDetected="#novo" prefHeight="59.0" prefWidth="88.0" text="Editar" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="92.0" />
-      <Button layoutX="498.0" layoutY="185.0" mnemonicParsing="false" onAction="#excluir" onDragDetected="#novo" prefHeight="59.0" prefWidth="88.0" text="Excluir" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="170.0" />
+      <Button layoutX="512.0" layoutY="14.0" mnemonicParsing="false" onAction="#novoProduto" prefHeight="19.0" prefWidth="74.0" style="-fx-background-color: #6f0606;" text="novo" textFill="WHITE" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0" />
+      <Button layoutX="512.0" layoutY="51.0" mnemonicParsing="false" onAction="#editarProduto" prefHeight="8.0" prefWidth="74.0" style="-fx-background-color: #6f0606;" text="Editar" textFill="WHITE" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="51.0" />
+      <Button layoutX="512.0" layoutY="89.0" mnemonicParsing="false" onAction="#excluirProduto" prefHeight="15.0" prefWidth="74.0" style="-fx-background-color: #6f0606;" text="Excluir" textFill="#fcfcfc" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="89.0" />
+      <Button layoutX="512.0" layoutY="131.0" mnemonicParsing="false" onAction="#voltar" prefHeight="15.0" prefWidth="74.0" style="-fx-background-color: #6f0606;" text="Voltar" textFill="WHITE" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="131.0" />
    </children>
 </AnchorPane>
